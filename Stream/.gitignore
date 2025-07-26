@@ -1,6 +1,44 @@
+# Build results
 bin/
 obj/
-*.pdb
-*.dll
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Core secrets
+secrets.json
+
+# App configuration
+appsettings.Development.json
+appsettings.Local.json
+Stream.http
+
+# Logs and reports
 *.log
-*.cache
+TestResults/
+coverage/
+
+# Entity Framework
+Migrations/
+
+# Packages
+*.nupkg
+.nuget/
+packages/
+
+# SQLite or other database files
+*.db
+*.sqlite
