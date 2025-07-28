@@ -25,15 +25,17 @@ builder.Services.AddScoped<ITemporadaService, TemporadaService>();
 
 var app = builder.Build();
 
-app.MapControllers();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
+
+app.UseRouting();
+app.UseAuthorization();
+
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
+
+app.MapControllers();
 
 
 
