@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\StreamAPI\\Stream\\Stream.csproj": {}
+    "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\StreamAPI\\Stream\\Stream.csproj": {
+    "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\StreamAPI\\Stream\\Stream.csproj",
+        "projectUniqueName": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj",
         "projectName": "Stream",
-        "projectPath": "C:\\Projetos\\StreamAPI\\Stream\\Stream.csproj",
-        "packagesPath": "C:\\Users\\Caio Nery\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\StreamAPI\\Stream\\obj\\",
+        "projectPath": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj",
+        "packagesPath": "C:\\Users\\computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Caio Nery\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\computador\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
