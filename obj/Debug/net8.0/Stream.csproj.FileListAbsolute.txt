@@ -149,9 +149,12 @@ C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Stream.deps.json
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Stream.runtimeconfig.json
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Stream.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Stream.pdb
+C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Azure.Core.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Azure.Identity.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -286,5 +289,3 @@ C:\Projetos\Stream\StreamAPI\obj\Debug\net8.0\refint\Stream.dll
 C:\Projetos\Stream\StreamAPI\obj\Debug\net8.0\Stream.pdb
 C:\Projetos\Stream\StreamAPI\obj\Debug\net8.0\Stream.genruntimeconfig.cache
 C:\Projetos\Stream\StreamAPI\obj\Debug\net8.0\ref\Stream.dll
-C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\AutoMapper.dll
-C:\Projetos\Stream\StreamAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
