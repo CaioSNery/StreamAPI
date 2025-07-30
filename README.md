@@ -13,13 +13,11 @@ Uma API desenvolvida com ASP.NET Core para gerenciamento de um sistema de stream
 - Swagger
 - Envio de E-mail com SMTP
 - Regras de negócio personalizadas
-- 🚀Deploy no Azure App Service
+- Mapeamento de objetos com AutoMapper 🔄
+- Autenticação com JWT 🔐 
+- Deploy no Azure App Service🚀
 
-> 📌 Em breve:
-> - Autenticação com JWT 🔐  
-> - Envio de SMS com Twilio 📲  
-> - Mapeamento de objetos com AutoMapper 🔄  
-
+  
 ---
 
 ## 📌 Funcionalidades
