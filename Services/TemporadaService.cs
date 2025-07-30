@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Stream.Data;
 using Stream.Interfaces;
@@ -13,9 +14,11 @@ namespace Stream.Services
     {
         
         private readonly AppDbContext _context;
-        public TemporadaService(AppDbContext context)
+        private readonly IMapper _mapper;
+        public TemporadaService(AppDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<object> AddTemporadaNaSerie(TemporadaDTO dto)
@@ -41,13 +44,7 @@ namespace Stream.Services
             _context.Temporadas.Add(novaTemporada);
             await _context.SaveChangesAsync();
 
-            return new TemporadaResponseDTO
-            {
-                Id = novaTemporada.Id,
-                Numero = novaTemporada.Numero,
-                Titulo = novaTemporada.Titulo,
-                SerieId = novaTemporada.SerieId
-            };
+            return _mapper.Map<TemporadaResponseDTO>(novaTemporada);
 
         }
 

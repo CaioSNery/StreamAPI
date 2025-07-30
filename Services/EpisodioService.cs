@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Stream.Data;
 using Stream.Interfaces;
@@ -13,20 +14,22 @@ namespace Stream.Services
     {
 
         private readonly AppDbContext _context;
-        public EpisodioService(AppDbContext context)
+        private readonly IMapper _mapper;
+        public EpisodioService(AppDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<object> AddEpisodioNaSerie(EpisodioDTO dto)
         {
             var temporada = await _context.Temporadas
             .Include(t => t.Episodios)
-            .FirstOrDefaultAsync(t => t.Id == dto.IdTemporada);
+            .FirstOrDefaultAsync(t => t.Id == dto.TemporadaId);
 
             if (temporada == null)
             {
-                return $"Temporada com Id{dto.IdTemporada} nao encontrado";
+                return $"Temporada com Id{dto.TemporadaId} nao encontrado";
             }
 
             var novoEpisodio = new Episodio
@@ -41,13 +44,7 @@ namespace Stream.Services
             _context.Episodios.Add(novoEpisodio);
             await _context.SaveChangesAsync();
 
-            return new EpisodioResponseDTO
-            {
-             Id = novoEpisodio.Id,
-             Numero = novoEpisodio.Numero,
-             Duracao = novoEpisodio.Duracao,
-             TemporadaId = novoEpisodio.TemporadaId
-            };
+            return _mapper.Map<EpisodioResponseDTO>(novoEpisodio);
         }
 
         public async Task<Episodio> BuscarEpPorIdAsync(int id)

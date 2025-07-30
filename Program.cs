@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Stream.Data;
 using Stream.Interfaces;
 using Stream.Services;
+using StreamAPI.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,7 @@ builder.Services.AddScoped<IFilmeService, FilmeService>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IEpisodioService, EpisodioService>();
 builder.Services.AddScoped<ITemporadaService, TemporadaService>();
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 
 var app = builder.Build();

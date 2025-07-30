@@ -10,7 +10,7 @@ namespace Stream.Models
         public int Numero { get; set; }
         public int Duracao { get; set; }
 
-        public int IdTemporada{ get; set; }
+        public int TemporadaId{ get; set; }
 
     }
 }

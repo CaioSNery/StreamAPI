@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj": {}
+    "C:\\Projetos\\Stream\\StreamAPI\\Stream.csproj": {}
   },
   "projects": {
-    "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj": {
+    "C:\\Projetos\\Stream\\StreamAPI\\Stream.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj",
+        "projectUniqueName": "C:\\Projetos\\Stream\\StreamAPI\\Stream.csproj",
         "projectName": "Stream",
-        "projectPath": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\Stream.csproj",
+        "projectPath": "C:\\Projetos\\Stream\\StreamAPI\\Stream.csproj",
         "packagesPath": "C:\\Users\\computador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\computador\\Desktop\\Nova pasta\\StreamAPI\\obj\\",
+        "outputPath": "C:\\Projetos\\Stream\\StreamAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\computador\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.17, )"
