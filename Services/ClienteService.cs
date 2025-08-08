@@ -30,7 +30,7 @@ namespace Stream.Services
             <p>Seu cadastro foi realizado com sucesso na nossa plataforma <strong>Filmes&Series</strong>.</p>
             <p>Planos com Preços exclusivo para novos assinantes!</p>
             <p>Seja bem-vindo(a)!</p>";
-        
+
 
             await _emailService.EnviarEmailAsync(cliente.Email, "Cadastro confirmado", mensagem);
             return cliente;
@@ -43,7 +43,7 @@ namespace Stream.Services
 
             cliente.Assinante = clientesign.Assinante;
 
-            _appDb.Clientes.Update(clientesign);
+
             await _appDb.SaveChangesAsync();
 
             var mensagem = $@"
@@ -51,13 +51,13 @@ namespace Stream.Services
             <p>Sua Conta esta com a assinatura vencida em nossa plataforma <strong>Filmes&Series</strong>.</p>
             <p>Entre em contato para conhecer nossos planos ou atualizar o ja ativo.</p>
             <p>Te Esperamos de volta!</p>";
-        
+
 
             await _emailService.EnviarEmailAsync(cliente.Email, "Atualização de Conta", mensagem);
             return true;
 
 
-            
+
         }
 
         public async Task<bool> DeletarClienteAsync(int id)
@@ -82,7 +82,7 @@ namespace Stream.Services
             cliente.Cpf = clienteUpdate.Cpf;
 
 
-            _appDb.Clientes.Update(cliente);
+
             await _appDb.SaveChangesAsync();
 
 
@@ -92,14 +92,14 @@ namespace Stream.Services
             <p>Seu cadastro foi alterado com sucesso na nossa plataforma <strong>Filmes&Series</strong>.</p>
             <p>Se Nao reconhece essa mudança,entre em contato com a nossa central!</p>
             <p>Seja bem-vindo(a)!</p>";
-        
+
 
             await _emailService.EnviarEmailAsync(cliente.Email, "Cadastro confirmado", mensagem);
             return true;
 
 
         }
-        
-        
+
+
     }
 }

@@ -22,25 +22,25 @@ namespace Stream.Services
             var serie = new Serie
             {
                 Titulo = dto.Titulo,
-                Genero=dto.Genero,
+                Genero = dto.Genero,
                 Temporadas = dto.Temporadas.Select(t => new Temporada
-            {
-                Titulo = t.Titulo,
-                Numero = t.Numero,
-                Episodios = t.Episodios.Select(e => new Episodio
                 {
-                    Numero = e.Numero,
-                    Duracao=e.Duracao
+                    Titulo = t.Titulo,
+                    Numero = t.Numero,
+                    Episodios = t.Episodios.Select(e => new Episodio
+                    {
+                        Numero = e.Numero,
+                        Duracao = e.Duracao
+                    }).ToList()
                 }).ToList()
-            }   ).ToList()
-               
+
             };
-            
 
-                _context.Series.Add(serie);
-                await _context.SaveChangesAsync();
 
-                return serie;
+            _context.Series.Add(serie);
+            await _context.SaveChangesAsync();
+
+            return serie;
         }
 
         public async Task<bool> DeletarSerieAsync(int id)
@@ -61,7 +61,7 @@ namespace Stream.Services
             serie.Temporadas = serieupdate.Temporadas;
             serie.Titulo = serieupdate.Titulo;
 
-            _context.Series.Add(serie);
+
             await _context.SaveChangesAsync();
 
             return true;
